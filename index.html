@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+</head>
+<script>
+	
+	function resimGoster1(){
+		document.getElementById("resim1").style.zIndex=2;
+		document.getElementById("resim2").style.zIndex=1;
+		document.getElementById("resim3").style.zIndex=1;
+		
+		
+	}
+	
+	function resimGoster2(){
+		document.getElementById("resim1").style.zIndex=1;
+		document.getElementById("resim2").style.zIndex=2;
+		document.getElementById("resim3").style.zIndex=1;
+		
+		
+	}
+	
+	function resimGoster3(){
+		document.getElementById("resim1").style.zIndex=1;
+		document.getElementById("resim2").style.zIndex=1;
+		document.getElementById("resim3").style.zIndex=2;
+		
+		
+	}
+	</script>
+
+	
+	
+	<style>
+	
+	#galeri{
+		position: relative;
+		
+		
+		
+	}
+	img{
+		position: absolute;
+		width: 300px;
+		height: 400px;
+		left:0;
+		top:0;
+		
+		
+		
+	}	
+	#butonlar{
+		position :absolute;
+		
+		left:50px;
+		top:450px;
+		
+		
+	}
+	
+	
+	
+</style>
+	
+	
+	<body>
+	
+	
+	<div id="galeri">
+		<img src="kirmizi.jpg" id="resim1">
+		<img src="pembe.jpg" id="resim2">
+		<img src="hardal.jpg" id="resim3">
+	
+	</div>
+	<div id="butonlar">
+		<input type="button" onMouseMove="resimGoster1()" value="kırmızı">
+		<input type="button" onmousemove="resimGoster2()" value="pembe">
+		<input type="button" onMouseMove="resimGoster3()" value="hardal">
+	
+	
+	</div>
+	
+</body>
+</html>
